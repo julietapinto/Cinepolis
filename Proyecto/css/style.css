@@ -1,0 +1,347 @@
+:root{
+    --blanco:#ffffff;
+    --oscuro: #212121;
+    --amarillo:#f1ba13;
+    --secundario: #0097a7;
+    --gris:#050505;
+
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;/*scrolll*/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+body{
+    
+    
+    font-size: 1.6rem;
+    line-height: 2;
+  }
+ 
+
+
+.header{
+    color:var(--amarillo);
+    text-decoration: none;
+    font-weight: 700;
+    padding:2rem;
+    
+    background-color: rgb(4, 4, 114);
+    color: var(--blanco);
+
+
+}
+
+.opciones{
+    color:var(--amarillo);
+    /*centra el texto cuando se hace más pequeña la pagina*/
+    display:block;
+    text-align: center;
+    /*se cambia de posicion los links*/
+    display:flex;
+  
+    flex-direction: column;/*coloca en columna los botones al hacer la pagina pequeña*/
+    
+    
+    
+}
+
+
+.boton{
+    background-color:#f1c94e;
+    font-family: 'Unbounded';
+    margin-bottom: 0.5rem;
+    border: none;
+  
+    padding: 0.5rem;
+    border-radius: .2rem;
+    color: var(--oscuro);
+    
+}
+.op-campo{
+    font-size: 1rem;
+    
+    font-family: 'Unbounded';
+    justify-items: center;
+    color: var(--blanco);
+}
+
+@media (min-width: 768px){
+    .op-campo{
+        font-size: 3rem;
+        display: flex;
+        /*uno a la derecha (e y uno a la izquierda*/
+        justify-items: center;
+        justify-content: space-around;
+      
+        color: var(--blanco);
+     
+        
+    }
+}
+.formm{
+    font-family: 'Montserrat';
+    margin-bottom: 0.5rem;
+    border: none;
+  
+    padding: 0.5rem;
+    border-radius: .2rem;
+    color: #757575;
+
+    text-align:center;
+    font-size: 1.5rem;
+    font-weight: 700; /*700 o bold pone el texto en negrita*/
+    margin-bottom: 2rem;/*espacios entre el formulario*/
+  
+}
+
+
+
+
+
+
+.navegacion_principal{
+    /*centra el texto cuando se hace más pequeña la pagina*/
+    display:block;
+    text-align: center;
+    /*se cambia de posicion los links*/
+    display:flex;
+  
+    flex-direction: column;/*coloca en columna los botones al hacer la pagina pequeña*/
+    
+    
+}
+.navegacion_principal a {
+    color:var(--amarillo);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding:1rem;
+}
+.contenedor{
+    /*centra, si llega a 120rem que se ajuste a 100%*/
+    
+    max-width: 120rem;
+    margin:0 auto; 
+}
+.nav_bg { 
+    background-color: var(--oscuro);
+}
+.navegacion_principal a:hover{
+    background-color: var(--gris);
+    
+ 
+}
+
+@media (min-width:768px){
+    .navegacion_principal{
+        flex-direction: row;
+        font-family: 'Montserrat';
+        justify-content: space-between;
+        font-size: 5px;
+        
+    }
+}
+.iconos{
+    
+    display:flex;
+    justify-content: center;
+  
+
+}
+.imagen{
+    /*texto e imagen de fondo pagina principal*/
+    background-image: url(../202110715450526-prin.jpg);
+    height: 10rem;
+    background-size: cover;
+    background-position: center;
+}
+@media (min-width:768px){
+    .imagen{
+       
+        height: 30rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+    }
+}
+.principal{
+   
+    height: 115rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #7f63fcd8;
+    
+}
+.trescolumn{
+         
+    display:grid;/*hacer uso de columnas*/
+    grid-template-columns: 1fr 1fr 1fr ; /*3columnas de los servicios*/
+  /*  grid-template-columns: 1fr 1fr 1fr; tambien se puede hacer de esta manera*/
+   
+
+}
+
+.lado{
+  
+    padding: 10px 50px 20px;
+    
+    
+}
+    .poster{
+         
+        display:grid;/*hacer uso de columnas*/
+        grid-template-columns: 1fr 1fr ; /*3columnas de los servicios*/
+      /*  grid-template-columns: 1fr 1fr 1fr; tambien se puede hacer de esta manera*/
+       
+    
+}
+
+
+@media(min-width:768px){
+    .poster{
+        display:grid;/*hacer uso de columnas*/
+        grid-template-columns: 1fr 1fr 1fr 1fr ; /*3columnas de los servicios*/
+      /*  grid-template-columns: 1fr 1fr 1fr; tambien se puede hacer de esta manera*/
+       
+    }
+
+}
+.cartelera{
+    display: flex;
+    text-transform: uppercase; /*coloca en mayuscula la letra*/
+    color: var(--blanco);
+    background-color: rgb(240, 121, 78);
+    font-size: 1.5rem;
+    
+     font-family: 'Montserrat';
+    border: none;
+    padding: 0.5rem;
+    border-radius: .2rem;
+
+}
+.cartelera:hover{
+    background-color:rgb(252, 92, 34);
+    
+ 
+}
+.seccion{
+    display: flex;
+    justify-content: center;
+}
+
+.estrenos{
+   
+    text-decoration: none;
+    font-weight: 700;
+    padding:2rem;
+    
+  
+}
+.contenedor{
+    /*centra, si llega a 120rem que se ajuste a 100%*/
+    max-width: 120rem;
+    margin:0 auto; 
+}
+.prus{
+    display:flex;
+    flex-direction: row;/*direccionar si utilizamos columnas o filas */
+    align-items: stretch;/*alinear de manera vertical*/
+    padding: 1rem;
+    
+    
+}
+.prus .botonn2{
+    color:#009988;
+    border: none;
+    font-family: 'Montserrat';
+    font-weight: 700; /*700 o bold pone el texto en negrita*/
+    background-color: var(--blanco);
+    font-size: 2rem;
+    
+}
+  .prus .h1{
+    color:#009988;
+    background-color: var(--blanco);
+  }
+  
+
+@media(min-width:770px){
+    .doscolumnsprev{
+        display:grid;/*hacer uso de columnas*/
+        grid-template-columns: 33.33% 33.33%; 
+      /*  grid-template-columns: 1fr 1fr 1fr; tambien se puede hacer de esta manera*/
+      justify-content: center;
+      padding: 2rem;
+  
+       
+    }
+
+}
+
+.fontsect{
+    background-color: #ebebeb;
+    font-family: 'Unbounded';
+    font-size: xX-small;
+    color:#545757;
+    padding: 1rem;
+    
+ 
+}
+.fontsecth1{
+    display:flex;
+    flex-direction: column;
+    
+}
+.contt{
+    display:flex;
+    flex-direction: row;
+    text-transform: uppercase; /*coloca en mayuscula la letra*/
+    font-family: 'Montserrat';
+
+}
+.last{
+    padding: 2rem;
+    font-weight: 700; /*700 o bold pone el texto en negrita*/
+    background-color: #ebebeb;
+    font-family: 'Montserrat';
+}
+.preventt{
+    justify-content: center;
+    text-align: center;
+    
+}
+.abajo{
+    display:grid;/*hacer uso de columnas*/
+    grid-template-columns: 1fr ; /*3columnas de los servicios*/
+ 
+       text-align: center;
+    background-color: #161616;
+}
+@media(min-width:768px){
+    .abajo{
+        display:grid;/*hacer uso de columnas*/
+        grid-template-columns: 1fr 1fr ; /*3columnas de los servicios*/
+     
+    }
+}
+.abajoh1{
+    
+    font-family: 'Montserrat';
+    color:var(--amarillo);
+    text-transform: uppercase; /*coloca en mayuscula la letra*/
+  
+   
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding:1rem;
+}
+.secpre{
+   text-align: center;
+   padding: 1rem;
+}
